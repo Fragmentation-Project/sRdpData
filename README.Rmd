@@ -1,0 +1,61 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# sRdpData
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of sRdpData is to provide you with easy, programmatic access to data on all self-determination groups and organizations, the countries that they are challenging, their start and end years, and their use of violent and non-violent tactics.  
+
+## Installation
+
+You can install the development version of sRdpData from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("hgoers/sRdpData")
+```
+
+## Access group- and organization-level data for all years between 1960 and 2005
+
+```{r}
+library(sRdpData)
+
+# Access organization-level data
+srdp_orgs() # In organization-year dyads, or
+srdp_orgs(wide = TRUE) # At the organization-level
+
+# Access group-level data in much the same way
+srdp_groups() # In group-year dyads, or
+srdp_groups(wide = TRUE) # At the group-level
+```
+
+## See how groups and organizations have changed over time
+
+```{r}
+library(sRdpData)
+library(tidyverse)
+
+srdp_orgs() %>% 
+  group_by(year) %>% 
+  summarise(n = n()) %>% 
+  ggplot(aes(x = year, y = n)) +
+  geom_line() + 
+  theme_minimal() + 
+  labs(title = "Number of organizations active each year, 1960-2005",
+       x = "Year",
+       y = NULL)
+```
