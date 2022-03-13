@@ -80,3 +80,24 @@ srdp_groups <- function(wide = FALSE) {
 
 }
 
+#' Access to SRDP organization-level tactical data.
+#'
+#' This function provides a dataset of all SRDP organizations, their groups, the
+#' countries they are challenging, and their yearly use of violent and non-violent
+#' tactics. It covers the period between 1960 and 2005.
+#'
+#'
+#' @return A tibble, with each group's facid, name, kgcid, name, country, country challenged, and tactics
+#' @importFrom rlang .data
+#'
+#' @export
+#'
+#' @examples
+#' tactics <- srdp_tactics()
+srdp_tactics <- function() {
+
+  sRdpData::orgs %>%
+    tibble::as_tibble()
+
+}
+

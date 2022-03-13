@@ -43,6 +43,14 @@ srdp_groups() # In group-year dyads, or
 srdp_groups(wide = TRUE) # At the group-level
 ```
 
+## Get annual data on groups' use of tactics
+
+```{r}
+library(sRdpData)
+
+srdp_tactics()
+```
+
 ## See how groups and organizations have changed over time
 
 ```{r}

@@ -3,5 +3,6 @@
 export("%>%")
 export(srdp_groups)
 export(srdp_orgs)
+export(srdp_tactics)
 importFrom(magrittr,"%>%")
 importFrom(rlang,.data)

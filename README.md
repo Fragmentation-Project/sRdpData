@@ -93,6 +93,33 @@ srdp_groups(wide = TRUE) # At the group-level
 #> # … with 132 more rows
 ```
 
+## Get annual data on groups’ use of tactics
+
+``` r
+library(sRdpData)
+
+srdp_tactics()
+#> # A tibble: 12,017 × 19
+#>    kgcid group_name  facid fac_name         year violence_state fatal_violence_…
+#>    <dbl> <chr>       <dbl> <chr>           <dbl> <fct>          <fct>           
+#>  1   101 Tajiks     101001 Jam'iyat-i-Isl…  1978 1              1               
+#>  2   101 Tajiks     101001 Jam'iyat-i-Isl…  1979 1              1               
+#>  3   101 Tajiks     101001 Jam'iyat-i-Isl…  1980 1              1               
+#>  4   101 Tajiks     101001 Jam'iyat-i-Isl…  1981 1              1               
+#>  5   101 Tajiks     101001 Jam'iyat-i-Isl…  1982 1              1               
+#>  6   101 Tajiks     101001 Jam'iyat-i-Isl…  1983 1              1               
+#>  7   101 Tajiks     101001 Jam'iyat-i-Isl…  1984 1              1               
+#>  8   101 Tajiks     101001 Jam'iyat-i-Isl…  1985 1              1               
+#>  9   101 Tajiks     101001 Jam'iyat-i-Isl…  1986 1              1               
+#> 10   101 Tajiks     101001 Jam'iyat-i-Isl…  1987 1              1               
+#> # … with 12,007 more rows, and 12 more variables: violence_org <fct>,
+#> #   fatal_violence_org <fct>, violence_ingroup <fct>,
+#> #   fatal_violence_ingroup <fct>, violence_outgroup <fct>,
+#> #   fatal_violence_outgroup <fct>, economic_noncoop <fct>,
+#> #   protest_demonstration <fct>, nvintervention <fct>, social_noncoop <fct>,
+#> #   institutional <fct>, political_nocoop <fct>
+```
+
 ## See how groups and organizations have changed over time
 
 ``` r
@@ -118,4 +145,4 @@ srdp_orgs() %>%
        y = NULL)
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
