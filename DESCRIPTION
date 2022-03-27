@@ -4,7 +4,7 @@ Title: Strategies of Resistance Data Project
 Version: 0.1.0
 Author: Harriet Jane Goers
 Maintainer: Harriet Jane Goers <hgoers@umd.edu>
-Description: This package provides you with easy, programmatic access to SRDP data.
+Description: Provides you with easy, programmatic access to SRDP data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

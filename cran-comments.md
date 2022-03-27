@@ -2,8 +2,6 @@
 
 There were no ERRORs, NOTEs, or WARNINGs. 
 
-## Downstream dependencies
-
 ## Test environments
 
 This package was developed on a Mac OS X. It has also been tested on Windows. All tests passed with no ERRORs, NOTEs, or WARNINGs. 
