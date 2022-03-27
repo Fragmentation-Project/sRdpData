@@ -9,7 +9,9 @@
 The goal of sRdpData is to provide you with easy, programmatic access to
 data on all self-determination groups and organizations, the countries
 that they are challenging, their start and end years, and their use of
-violent and non-violent tactics.
+violent and non-violent tactics. This package is part of the [Strategies
+of Resistance Data
+Project](http://www.kathleengallaghercunningham.com/data-projects.html).
 
 ## Installation
 
