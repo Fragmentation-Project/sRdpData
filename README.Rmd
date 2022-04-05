@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 # sRdpData
 
 <!-- badges: start -->
-[![](https://cranlogs.r-pkg.org/badges/srDpData)](https://cranlogs.r-pkg.org/badges/grand-total/sRdpData)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/sRdpData)]
 <!-- badges: end -->
 
 The goal of sRdpData is to provide you with easy, programmatic access to data on all self-determination groups and organizations, the countries that they are challenging, their start and end years, and their use of violent and non-violent tactics. This package is part of the [Strategies of Resistance Data Project](http://www.kathleengallaghercunningham.com/data-projects.html). 
