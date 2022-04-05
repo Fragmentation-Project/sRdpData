@@ -4,6 +4,8 @@
 # sRdpData
 
 <!-- badges: start -->
+
+[![](https://cranlogs.r-pkg.org/badges/srDpData)](https://cranlogs.r-pkg.org/badges/grand-total/sRdpData)
 <!-- badges: end -->
 
 The goal of sRdpData is to provide you with easy, programmatic access to
