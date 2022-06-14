@@ -23,6 +23,12 @@ The goal of sRdpData is to provide you with easy, programmatic access to data on
 
 ## Installation
 
+From the R console, type: 
+
+```r
+install.packages("sRdpData")
+```
+
 You can install the development version of sRdpData from [GitHub](https://github.com/) with:
 
 ``` r

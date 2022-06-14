@@ -17,6 +17,12 @@ Project](http://www.kathleengallaghercunningham.com/data-projects.html).
 
 ## Installation
 
+From the R console, type:
+
+``` r
+install.packages("sRdpData")
+```
+
 You can install the development version of sRdpData from
 [GitHub](https://github.com/) with:
 
